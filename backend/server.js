@@ -3,7 +3,6 @@ import app from "./src/app.js";
 import express from 'express';
 import cors from 'cors';
 
-
 app.use(cors({
   origin: process.env.FRONTEND_URL
 }))
