@@ -1,10 +1,8 @@
 //si tengo variable busque en la variable d entorno
-const baseUrl = import.meta.env.VITE_API_URL;
+const API_URL =
+  import.meta.env.VITE_API_URL || "https://farmacia-online-backend-tjwc.onrender.com/api";
 
-if (!baseUrl) {
-  throw new Error("Falta configurar VITE_API_URL en Vercel.");
-}
-
+console.log("API conectada a:", API_URL);
 
 export const apiConfig = {
   API_URL
